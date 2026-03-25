@@ -1,14 +1,19 @@
-public class UC3HelloApp {
+public class HelloApp {
     public static void main(String[] args) {
-        
-        
-        String name;
-        
+        StringBuilder names = new StringBuilder();
+
         if (args.length > 0) {
-            name = args[0];   
+            for (int i = 0; i < args.length; i++) {
+                names.append(args[i]);
+
+                if (i < args.length - 1) {
+                    names.append(", ");
+                }
+            }
         } else {
-            name = "World";  
+            names.append("World");
         }
-         System.out.println("Hello, " + name + "!");
+
+        System.out.println("Hello, " + names + "!");
     }
 }
