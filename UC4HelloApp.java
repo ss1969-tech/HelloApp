@@ -1,4 +1,4 @@
-public class HelloApp {
+public class UC4HelloApp {
     public static void main(String[] args) {
         StringBuilder names = new StringBuilder();
 
